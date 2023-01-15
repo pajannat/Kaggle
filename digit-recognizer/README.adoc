@@ -46,9 +46,8 @@ outputフォルダには、提出用のcsvファイルを出力 +
 == features
 featuresフォルダには、train/testから作成した各特徴量を保存 +
 
-base.pyなど、詳細については以下ブログを参照
-
-amalog.hateblo.jp
+base.pyなど、詳細については以下を参照 +
+https://amalog.hateblo.jp/entry/kaggle-feature-management
 
 === importances
 特徴量の重要度を出力
@@ -57,30 +56,28 @@ amalog.hateblo.jp
 logsフォルダには、計算の実行ごとに下記の情報などを出力
 ファイル名は「log_(year-month-day-hour-min).log」のように設定し、前述した通り提出用のcsvファイルと照合できるようにしている
 
-利用した特徴量
-trainのshape
-学習器のパラメータ
-cvのスコア
-LightGBMのログ出力についても、amaotoneさんの次のブログを参考にしました。
-
-
-amalog.hateblo.jp
-
-loggerに関しては、現在こちらのブログを読みながら更なる良い方法を検討しているところです。
-
-
-icebee.hatenablog.com
+* 利用した特徴量
+* trainのshape
+* 学習器のパラメータ
+* cvのスコア
+LightGBMのログ出力は以下を参照 +
+https://amalog.hateblo.jp/entry/lightgbm-logging-callback +
+https://icebee.hatenablog.com/entry/2018/12/16/221533
 
 == models
-modelフォルダには、学習器を用意しています。下記のように汎用的に作ることで、別のコンペでも使い回せることを意識しています。
+modelフォルダには、学習器を用意 +
+下記のように汎用的に作ることで、別のコンペでも使い回せることを意識
 
-入力：pandas.DataFrame、パラメータ
-出力：予測結果
+* 入力：pandas.DataFrame、パラメータ
+* 出力：予測結果
+
 == notebook
-notebookフォルダには、探索的データ分析などで利用したJupyter Notebookを配置しています。ここで試行錯誤した結果を、適切なフォルダ内のpythonファイルに取り込んでいきます。
+notebookフォルダには、探索的データ分析などで利用したJupyter Notebookを配置 +
+ここで試行錯誤した結果を、適切なフォルダ内のpythonファイルに取り込む
 
 == scripts
-scriptsフォルダには、汎用的なpythonファイルを配置します。例えば convert_to_feather.py ファイルは、csvファイルをfeather形式のファイルに変換します。
+scriptsフォルダには、汎用的なpythonファイルを配置 +
+例えば convert_to_feather.py ファイルは、csvファイルをfeather形式のファイルに変換
 
 ....
 import pandas as pd
@@ -98,12 +95,13 @@ for t in target:
 ....
 
 == utils
-utilsフォルダには、汎用的に使える関数を書いている
+utilsフォルダには、汎用的に使える関数を書く
 
 == 計算の実行
-リポジトリのルートで以下を実行します。
+リポジトリのルートで以下を実行 +
 
-このrun.pyは、コンペに応じて比較的自由に記述することにしています。このrun.pyから、汎用的に書いた各フォルダの要素を取り出してくるイメージです。
+run.pyは、コンペに応じて自由に記述 +
+このrun.pyから、汎用的に書いた各フォルダの要素を取り出してくる
 ....
 python run.py
 ....
