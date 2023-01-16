@@ -7,5 +7,9 @@
 ・timmでresnet50のbaselineを作成して、学習/推論/提出 +
 　提出したファイルは digit-recognizer/data/output/sub_2023-01-16-13-29_0.98232.csv +
   次はbaselineにデータ拡張処理を加えて、スコアがどう変わるかを試したい +
-・最大40°回転させるデータ拡張処理(probability = 0.6)をresnet50のbaselineに追加 +
+・データ拡張処理 +
+  - Rotate(limit=40, p=0.6) +
+  - ShiftScaleRotate(rotate_limit=40, p=0.6) +
+  - 最大40°回転させるデータ拡張処理(probability = 0.6) +
+  をresnet50のbaselineに追加 +
   提出したファイルは digit-recognizer/data/output/sub_2023-01-16-13-29_0.98328.csv +
