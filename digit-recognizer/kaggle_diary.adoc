@@ -10,6 +10,13 @@
 ・データ拡張処理 +
   - Rotate(limit=40, p=0.6) +
   - ShiftScaleRotate(rotate_limit=40, p=0.6) +
-  - 最大40°回転させるデータ拡張処理(probability = 0.6) +
+  - Downscale(scale_min=0.7, scale_max=0.7, p=0.6) +
   をresnet50のbaselineに追加 +
   提出したファイルは digit-recognizer/data/output/sub_2023-01-16-13-29_0.98328.csv +
+・model: resnet18 +
+  Data Augment: +
+  - Rotate(limit=30, p=0.6) +
+  - ShiftScaleRotate(rotate_limit=30, p=0.6) +
+  - Downscale(scale_min=0.7, scale_max=0.7, p=0.6) +
+  提出したファイルは digit-recognizer/data/output/sub_2023-01-16-21-20_0.99385.csv +
+
