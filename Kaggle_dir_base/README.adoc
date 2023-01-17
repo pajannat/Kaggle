@@ -2,6 +2,13 @@ https://upura.hatenablog.com/entry/2018/12/28/225234#notebook +
 を参考にフォルダを構成 +
 以下説明も上記サイトの説明を参考にしている +
 
+== ./
+・TODO.adoc +
+kaggleのやりたいことリスト +
+
+・kaggle_diary.adoc +
+kaggleの作業記録 +
+
 == configs
 jsonファイルで、諸設定を記載
 
