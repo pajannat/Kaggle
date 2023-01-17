@@ -1,2 +1,3 @@
-# Kaggle +
-kaggleコンペで使用したkernelを蓄積するレポジトリ
+## Kaggle +
+kaggleコンペで使用したkernel等を蓄積するレポジトリ +
+コンペ終了後に格納する +
