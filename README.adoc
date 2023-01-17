@@ -1,1 +1,2 @@
-# Kaggle
+# Kaggle +
+kaggleコンペで使用したkernelを蓄積するレポジトリ
